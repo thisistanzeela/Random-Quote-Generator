@@ -9,7 +9,6 @@ let Body = () => {
     let quotes = await fetch("https://api.quotable.io/quotes/random");
     let json = await quotes.json();
     setChangeQuote(json);
-    console.log(json)
   };
 
   useEffect(() => {
